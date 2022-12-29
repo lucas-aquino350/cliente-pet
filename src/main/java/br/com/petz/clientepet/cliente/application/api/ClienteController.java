@@ -1,6 +1,7 @@
 package br.com.petz.clientepet.cliente.application.api;
 
 import java.util.List;
+import java.util.UUID;
 
 import org.springframework.web.bind.annotation.RestController;
 
@@ -27,5 +28,12 @@ public class ClienteController implements ClienteApi {
 		log.info("[finaliza] clienteController - getTodosCliente");
 		
 		return clientes;
+	}
+	@Override
+	public ClienteDetalhadoResponse getClienteAtravesId(UUID idCliente) {
+		log.info("[inicia] clienteController - getTodosClienteAtravesId");
+		log.info("[idCliente] {}", idCliente);
+		log.info("[finaliza] clienteController - getTodosClienteAtravesId");
+		return null;
 	}
 }
