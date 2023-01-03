@@ -6,11 +6,13 @@ import java.util.UUID;
 import br.com.petz.clientepet.cliente.domain.Cliente;
 
 public interface ClienteRepository {
-
 	Cliente salva(Cliente cliente);
-
+	
 	List<Cliente> buscaTodosClientes();
-
+	
 	Cliente buscaClienteAtravesId(UUID idCliente);
+
+	void deletaCliente(Cliente cliente);
+	
 
 }
